@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Responder",
+  "version": "0.1",
+
+  "description": "Pozwala uzytkownikowi monitorowac czas spedzony w sieci.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["borderify.js"]
+    }
+  ]
+
+}

@@ -71,6 +71,8 @@ body{
 	text-align: center;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 1.2em;
+	color: #800080;
+	background-color: #282828;
 }
 
 .img-wrapper{
@@ -112,6 +114,10 @@ h3{
 	width:100%;
 	color: #585858;
 	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h2{
+	color: #FF00FF;
 }
 
 #top{

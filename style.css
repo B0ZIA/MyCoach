@@ -1,22 +1,123 @@
+*{
+	margin:0px;
+}
+
 .btn {
   border: none;
-  background-color: #F5F5F5;
-  padding: 14px 28px;
-  font-size: 16px;
   cursor: pointer;
   display: inline-block;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.05), 0 6px 20px 0 rgba(0,0,0,0.05);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.2);
+  padding: 25px 70px;
 }
 
 /* On mouse-over */
-.btn:hover {background: #eee;}
+.btn:hover 
+{
+	background-color: #3e8e41;
+	color: white;
+}
 
-.success {color: green;}
-.info {color: dodgerblue;}
-.warning {color: orange;}
-.danger {color: red;}
-.default {color: black;}
+.trello 
+{
+	color: black;
+	text-align: center;
+	font-size: 1em;
+	background-image: url("icons/trello.png"); 
+}
+.gitchub 
+{
+	color: black;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 1.2em;
+	background-image: url("icons/gitchub.jpg"); 
+}
+.gamedev 
+{
+	color: black;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 1.2em;
+	background-image: url("icons/gamedev.png"); 
+}
+.itchio 
+{
+	color: black;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 1.2em;
+	background-image: url("icons/itchio.png"); 
+}
 
-h4 {
-  color: green;
+body{
+	overflow: hidden;
+	height: auto;
+	background-color: #ffffff;
+	width: 100%;
+}
+
+#navigation
+{
+	border: 0px;
+}
+#main
+{
+	background-color: #white;
+	border: 10px solid #white;
+}
+#stats
+{
+	border: 10px solid f2f2f2;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 1.2em;
+}
+
+.img-wrapper{
+	float:left;
+	height: auto;
+}
+
+img{
+	width: 100%;
+	opacity: 1;
+	display: block;
+	transition: 0.5s ease;
+	height: auto;
+}
+
+.text_wrapper{
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: #ffffff;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	margin-top: -30%;
+	height: auto;
+}
+
+.img-wrapper:hover .text_wrapper{
+	opacity: 0.9;
+}
+
+.img-wrapper:hover img{
+	opacity: 0.7;
+}
+
+h3{
+	text-align: center;
+	width:100%;
+	color: #585858;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#top{
+	font-size: 4.5vw;
+}
+
+#bottom{
+	font-size: 7vw;
 }

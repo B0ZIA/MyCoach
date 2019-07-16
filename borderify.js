@@ -1,1 +1,6 @@
-document.body.style.border = "50px solid blue";
+var dzisiaj = new Date();
+
+var dzien = dzisiaj.getDate();
+var miesiac = dzisiaj.getMonth()+1;
+
+document.write(dzisiaj);
